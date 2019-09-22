@@ -1,1138 +1,443 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-us" xml:lang="en-us" class="yui3-js-enabled"><head>
-        <title>Moodle - Open-source learning platform | Moodle.org</title>
-        <style>{
-   
-                html, body{
-                    height:100%;
-                    }
-                html, body {
-                    height: 100%;
-                }
-                html {
-                    font-family: sans-serif;
-                    line-height: 1.15;
-                    -webkit-text-size-adjust: 100%;
-                    -ms-text-size-adjust: 100%;
-                    -ms-overflow-style: scrollbar;
-                    -webkit-tap-highlight-color: rgba(0,0,0,0);
-                }
-                *, *::before, *::after {
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-                html[Attributes Style] {
-                    direction: ltr;
-                    unicode-bidi: isolate;
-                    -webkit-locale: "en-us";
-                }
-                user agent stylesheet
-                html {
-                    display: block;
-                    color: -internal-root-color;
-                }
-                *, *::before, *::after {
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-                *, *::before, *::after {
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-                }</style>
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1568627409/favicons/org/favicon-144">
-        <meta name="apple-itunes-app" content="app-id=633359593, app-argument=https://moodle.org/"><link rel="manifest" href="https://moodle.org/admin/tool/mobile/mobile.webmanifest.php"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/05ab6e1949?a=70568480&amp;v=1130.54e767a&amp;to=YwBabBRSCEFYAkVaWlpKbUoPHA9cXQRJHUVcFQ%3D%3D&amp;rst=59238&amp;ref=https://moodle.org/&amp;ap=82&amp;be=12255&amp;fe=57382&amp;dc=20623&amp;perf=%7B%22timing%22:%7B%22of%22:1568864721238,%22n%22:0,%22f%22:10183,%22dn%22:10188,%22dne%22:10188,%22c%22:10188,%22s%22:10778,%22ce%22:11111,%22rq%22:11114,%22rp%22:11884,%22rpe%22:12970,%22dl%22:11951,%22di%22:20623,%22ds%22:20623,%22de%22:20624,%22dc%22:57382,%22l%22:57382,%22le%22:57384%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;fp=20576&amp;fcp=20576&amp;at=T0dZGlxIG08%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1130.min.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
-    <meta name="keywords" content="moodle, Moodle - Open-source learning platform | Moodle.org">
-    <link rel="stylesheet" type="text/css" href="https://moodle.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1568864741302_8" href="https://moodle.org/theme/yui_combo.php?3.17.2/cssbutton/cssbutton-min.css"><script charset="utf-8" id="yui_3_17_2_1_1568864741302_9" src="https://moodle.org/theme/yui_combo.php?m/1568340012/core/event/event-min.js&amp;m/1568340012/core/widget/widget-focusafterclose-min.js&amp;3.17.2/plugin/plugin-min.js&amp;m/1568340012/core/lockscroll/lockscroll-min.js&amp;m/1568340012/core/notification/notification-dialogue-min.js&amp;m/1568340012/core/notification/notification-alert-min.js&amp;m/1568340012/core/notification/notification-exception-min.js&amp;m/1568340012/core/notification/notification-ajaxexception-min.js&amp;m/1568340012/filter_glossary/autolinker/autolinker-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1568864741302_26" src="https://moodle.org/theme/yui_combo.php?m/1568340012/filter_mathjaxloader/loader/loader-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1568864741302_29" src="https://moodle.org/theme/yui_combo.php?3.17.2/event-mousewheel/event-mousewheel-min.js&amp;3.17.2/event-resize/event-resize-min.js&amp;3.17.2/event-hover/event-hover-min.js&amp;3.17.2/event-touch/event-touch-min.js&amp;3.17.2/event-move/event-move-min.js&amp;3.17.2/event-flick/event-flick-min.js&amp;3.17.2/event-valuechange/event-valuechange-min.js&amp;3.17.2/event-tap/event-tap-min.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://moodle.org/theme/moodleorg/css.php/moodleorg/1568627409_1567878493/all-org">
-    <script type="text/javascript">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #hoverer:hover
+        {  
+            background-color: rgb(255, 187, 0);
 
-
+        }
+        .content {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0,0.5);
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #c1{
+            color:black;
+            background-color:unset;
+            margin-bottom: 20%;
+            margin-left: 100px;
+        }
+    </style>
     
-    <meta name="description" content="Moodle is a Learning Platform or course management system (CMS) - a free Open Source software package designed to help educators create effective online courses based on sound pedagogical principles. You can download and use it on any computer you have handy (including webhosts), yet it can scale from a single-teacher site to a 200,000-student University. Moodle has a large and diverse user community with over 100,000 sites registered worldwide speaking over 140 languages in every country there is.">
-    
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="https://moodle.org/lib/requirejs.php/1568340012/core/first.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/event" src="https://moodle.org/lib/requirejs.php/1568340012/core/event.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://moodle.org/lib/javascript.php/1568340012/lib/jquery/jquery-3.2.1.min.js"></script><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        config: ["Accessible.js", "Safe.js"],
-        errorSettings: { message: ["!"] },
-        skipStartupTypeset: true,
-        messageStyle: "none"
-    });
-    </script></head>
-    <body id="page-site-index" class="format-site course path-site chrome dir-ltr lang-en_us yui-skin-sam yui3-skin-sam moodle-org pagelayout-frontpage course-1 context-5310 notloggedin jsenabled eupopup">
-    
-    <div id="page-wrapper">
-    
-        <div>
-        <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
-    </div><script type="text/javascript" src="https://moodle.org/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://moodle.org/lib/javascript.php/1568340012/lib/javascript-static.js"></script>
-    <script type="text/javascript">
-    //<![CDATA[
-    document.body.className += ' jsenabled';
-    //]]>
-    </script>
-    
-    
-    
-        <nav id="moodlesitestopnavbar" class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="d-none d-lg-block">
-                    <a class="sitelogo" href="https://moodle.org">
-                        <img alt="Moodle.org" width="96" height="25" src="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1568627409/sitebar/moodle_sitebar_logo_grayhat">
-                    </a>
-                </div>
-                <ul class="navbar-nav homenav">
-                    <li class="nav-item home">
-                        <a class="nav-link active" href="https://moodle.org"><span class="sr-only">Home</span>
-                            <i class="fa fa-home"></i>
-                        </a>
-                    </li>
-                </ul>
-                <button class="navbar-toggler btn p-2 icon-nomargin text-white mr-1" type="button" data-toggle="collapse" data-target="#sitetopnavbar" aria-controls="sitetopnavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="icon fa fa-bars fa-fw " aria-hidden="true"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="sitetopnavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item documentation">
-                            <a class="nav-link" href="https://docs.moodle.org"><span>Documentation</span></a>
-                        </li>
-                        <li class="nav-item download">
-                            <a class="nav-link" href="https://download.moodle.org"><span>Downloads</span></a>
-                        </li>
-                        <li class="nav-item demo">
-                            <a class="nav-link" href="https://moodle.org/demo"><span>Demo</span></a>
-                        </li>
-                        <li class="nav-item tracker">
-                            <a class="nav-link" href="https://tracker.moodle.org"><span>Tracker</span></a>
-                        </li>
-                        <li class="nav-item development">
-                            <a class="nav-link" href="https://docs.moodle.org/dev/Main_Page"><span>Development</span></a>
-                        </li>
-                        <li class="nav-item translation">
-                            <a class="nav-link" href="https://lang.moodle.org"><span>Translation</span></a>
-                        </li>
-                        <li class="nav-item moodlenet">
-                            <a class="nav-link" href="https://moodle.net"><span>Moodle.net</span></a>
-                        </li>
-                        <li class="nav-item search">
-                            <a class="nav-link" href="https://moodle.org/public/search/"><span class="sr-only">Search</span><i class="fa fa-search"></i></a>
+</head>
+<body>
+        <nav id="moodlesitestopnavbar" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="box-shadow: 5px 5px 15px black;border-bottom: 5px solid rgb(255, 187, 0)">
+                <div class="container-fluid" style="padding-left: 47%">
+                    <div>
+                    </div>
+                    <ul class="navbar-nav homenav">
+                        <li class="nav-item home">
+                            <a class="nav-link active" href="moodle.html"><span class="sr-only">Home</span>
+                                <i class="fa fa-home"></i>
+                            </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar-second p-x-0 withlogo py-0 navbar navbar-expand navbar-bootswatch moodle-has-zindex">
-            <div class="container-fluid">
-                <div class="row m-x-0 w-100">
-                    <div class="col-12 d-flex flex-wrap align-items-end">
-                        <div class="d-flex">
-                            <a href="https://moodle.org" class="navbar-brand py-0 mb-3">
-                                    <img src="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1568627409/moodle_logo_small" alt="Moodle" height="61px" width="204px">
-                            </a>
-                        </div>
-                        <ul class="nav navbar-nav justify-content-center justify-content-md-end mb-2 ml-auto">
-                            <!-- custom_menu -->
-                            <span class="custom-menu hidden my-2 my-md-0">
-                                <div class="langmenu d-inline-block">
-        <form method="get" action="https://moodle.org/" class="form-inline" id="single_select_f5d82f9dc49e0a4">
-                <label for="single_select5d82f9dc49e0a5">
-                    <span class="accesshide ">Language</span>
-                </label>
-            <select id="single_select5d82f9dc49e0a5" class="custom-select langmenu" name="lang">
-                      
-                        <option value="en_us" selected="">English - United States ‎(en_us)‎</option>
-                        <option value="en">English ‎(en)‎</option>
-                        <option value="es_co">Español - Colombia ‎(es_co)‎</option>
-                        <option value="es">Español - Internacional ‎(es)‎</option>
-                        <option value="es_mx">Español - México ‎(es_mx)‎</option>
-                        <option value="es_ve">Español - Venezuela ‎(es_ve)‎</option>
-            </select>
-            <noscript>
-                <input type="submit" class="btn btn-secondary" value="Go">
-            </noscript>
-        </form>
-    </div>
-                            </span>                
-                            <div>
-                                <div class="search-input-wrapper nav-link" id="5d82f9dc52cf2"><div role="button" tabindex="0"><i class="icon fa fa-search fa-fw " title="Search" aria-label="Search"></i></div><form class="search-input-form" action="https://moodle.org/search/index.php"><label for="id_q_5d82f9dc52cf2" class="accesshide">Enter your search query</label><input type="text" name="q" placeholder="Search" size="13" tabindex="-1" id="id_q_5d82f9dc52cf2" class="form-control"><input type="hidden" name="context" value="5310"></form></div>
-                            </div>
-                            <li class="nav-item d-flex flex-nowrap flex-row-reverse">
-                                
+                    <button class="navbar-toggler btn p-2 icon-nomargin text-white mr-1" type="button" data-toggle="collapse" data-target="sitetopnavbar" aria-controls="sitetopnavbar" aria-expanded="false" aria-label="Toggle navigation" id="homie">
+                        <i class="icon fa fa-bars fa-fw " aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="sitetopnavbar" style="font-family:Arial, Helvetica, sans-serif;padding-left:5px">
+                        <ul class="navbar-nav">
+                            <li class="nav-item documentation" id="hoverer">
+                                <a class="nav-link" href="#"><span>Documentation</span></a>
                             </li>
-                            <!-- user_menu -->
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="usermenu"><span class="login">You are not logged in. (<a href="https://moodle.org/login/index.php">Log in</a>)</span></div>
+                            <li class="nav-item download" id="hoverer">
+                                <a class="nav-link" href="#"><span>Downloads</span></a>
                             </li>
-                        </ul>
-                        <!-- search_box -->
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
-    
-        <div id="page" class="mt-0">
-    
-            <div id="page-content">
-                <div id="region-main-box" class="col-12 p-0">
-                    <section id="region-main" class="region-main-content p-0 border-0" aria-label="Content"><span id="user-notifications"></span>
-                        <section id="region-main-slides" class="hero-unit">
-        <div id="spiffySlides" class="">
-            <div class="tab-content slides" id="nav-tabContent">
-                <div class="slide tab-pane fade active community" id="slide1" role="tabpanel" aria-labelledby="slide1-tab">
-                    <div class="container-fluid fg">
-                        <div class="row-fluid community">
-                            <div class="offset-md-1 col-md-5">
-                                <h2 class="heroslide_community_headline">
-                                    Community driven, globally supported.
-                                </h2>
-                                <div class="description">
-                                    Welcome to the Moodle community and discover the value of an open, collaborative effort by one of the largest open-source teams in the world.
-                                </div>
-                                <a href="https://moodle.org/community" class="button">
-                                    Community forums
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="slide tab-pane fade power" id="slide2" role="tabpanel" aria-labelledby="slide2-tab">
-                    <div class="container-fluid">
-                        <div class="row-fluid power">
-                            <div class="offset-md-1 col-md-4">
-                                <div class="videopower">
-                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3ORsUGVNxGs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                                </div>
-                            </div>
-                            <div class="offset-md-1 col-md-5">
-                                <h2 class="heroslide_power_headline">
-                                    Powerful. Secure. Open source.
-                                </h2>
-                                <div class="description">
-                                    The world's free learning platform that helps you create effective online teaching and learning experiences in a collaborative, private environment.
-                                </div>
-                                <a href="https://moodle.org/features" class="button">
-                                    Features
-                                </a>
-                                <a href="http://school.demo.moodle.net" class="button">
-                                    Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="slide tab-pane fade global" id="slide3" role="tabpanel" aria-labelledby="slide3-tab">
-                    <div class="container-fluid fg img1">
-                        <div class="row-fluid">
-                            <div class="offset-md-1 col-md-10">
-                                <h2 class="heroslide_global_headline">
-                                    Powering learning environments worldwide
-                                </h2>
-                                <div class="description">
-                                    Available in over 100 languages, Moodle is trusted by organisations and institutions, large and small, with millions of users all over the world.
-                                </div>
-                                <a href="https://moodle.org/sites" class="button">
-                                    Registered sites
-                                </a>
-                                <a href="https://moodle.org/stats" class="button">
-                                    Statistics
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="slide tab-pane fade stories story4" id="slide4" role="tabpanel" aria-labelledby="slide4-tab">
-                    <div class="container-fluid">
-                        <div class="row-fluid stories">
-                            <div class="offset-md-1 col-md-6">
-                                <h2 class="heroslide_stories_headline">
-                                    Helping volunteers deliver programs to fight poverty
-                                </h2>
-                                <div class="description">
-                                    Voluntary Service Overseas (VSO) delivers interactive learning and support for volunteers internationally to enable global training approaches.
-                                </div>
-                                <a href="https://moodle.org/stories" class="button">
-                                    Read more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <nav class="spiffyNav">
-                <div class="container-fluid">
-                    <div class="row-container" id="nav-tab" role="tablist">
-                        <ul class="nav nav-tabs controls">
-                            <li class="nav-item">
-                                <a href="#slide1" class="nav-link active" id="slide1" data-toggle="tab" role="tab" aria-controls="slide1" aria-selected="true">
-                                    <div class="description">
-                                        Supported by a global community
-                                    </div>
-                                </a>
+                            <li class="nav-item demo" id="hoverer">
+                                <a class="nav-link" href="#"><span>Demo</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#slide2" class="nav-link" id="slide2" data-toggle="tab" role="tab" aria-controls="slide2" aria-selected="true">
-                                    <div class="description">
-                                        Robust open-source learning platform
-                                    </div>
-                                </a>
+                            <li class="nav-item tracker" id="hoverer">
+                                <a class="nav-link" href="#"><span>Tracker</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#slide3" class="nav-link" id="slide3" data-toggle="tab" role="tab" aria-controls="slide3" aria-selected="true">
-                                    <div class="description">
-                                        Powering learning environments worldwide
-                                    </div>
-                                </a>
+                            <li class="nav-item development" id="hoverer">
+                                <a class="nav-link" href="#"><span>Development</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#slide4" class="nav-link" id="slide4" data-toggle="tab" role="tab" aria-controls="slide4" aria-selected="true">
-                                    <div class="description">
-                                        Moodle stories from around the world
-                                    </div>
-                                </a>
+                            <li class="nav-item translation" id="hoverer">
+                                <a class="nav-link" href="#"><span>Translation</span></a>
+                            </li>
+                            <li class="nav-item moodlenet" id="hoverer">
+                                <a class="nav-link" href="#"><span>Moodle.net</span></a>
+                            </li>
+                            <li class="nav-item search" id="hoverer">
+                                <a class="nav-link" href="#"><span class="sr-only">Search</span><i class="fa fa-search"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </div>
-    </section>
-                        <div class="news">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                    <div class="col-md-3">
-                        <div class="media heading">
-                            <div class="media-body">
-                                <div class="d-flex border-bottom-dotted align-items-center">
-                                    <h3>
-                                        Announcements
-                                    </h3>
-                                    <a href="https://moodle.org/rss/file.php/51/1b51bf7f3cab9689af042af1ff4a07f0/mod_forum/1/rss.xml" class="text-moodle-gray ml-auto">
-                                        <i class="icon fa fa-rss fa-fw " aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                                <div class="d-flex justify-content-end">
-                                    <div class="morelink">
-                                        <a class="btn btn-link btn-sm icon-nomargin" href="https://moodle.org/news/">
-                                            See all announcements
-                                            <i class="icon fa fa-angle-double-right fa-fw " aria-hidden="true"></i>
-                                        </a>
+            <br><br><br>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#"><img src="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1568627409/moodle_logo_small" alt="Moodle" height="61px" width="204px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <form class="form-inline my-2 my-lg-0" style="padding-left:55% ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+              <div class="container-fluid">
+              <div class="row">
+                  <img src="yellow-world-map-on-bokeh-background-vector-21866916.jpg" width="100%" height="500">
+                <div class="content" style="margin-left: 25%">
+                    <h1>title</h1>
+                    <p>Some random text</p>
+                </div>
+                <div class="content" style="margin-left: 50%">
+                    <h1>title</h1>
+                    <p>Some random text</p>
+                </div>
+                <div class="content" style="margin-left: 75%">
+                    <h1>title</h1>
+                    <p>Some random text</p>
+                </div>
+                <div class="content">
+                    <h1>title</h1>
+                    <p>Some random text</p>
+                </div>
+                <div class="content" id="c1">
+                        <h1>title</h1>
+                        <p>Some random text</p>
+                  </div>
+            </div><br>
+            <div class="news">
+                    <div class="contain">
+                        <div class="row" style="background-color:lightgray;text-decoration: none;padding: 10px">
+                                <div class="col-md-3">
+                                    <div class="media heading">
+                                        <div class="media-body">
+                                            <div class="d-flex border-bottom-dotted align-items-center">
+                                                <h3 style="color: orange">
+                                                    Announcements
+                                                </h3>
+                                                <a href="https://moodle.org/rss/file.php/51/1b51bf7f3cab9689af042af1ff4a07f0/mod_forum/1/rss.xml" class="text-moodle-gray ml-auto">
+                                                    <i class="icon fa fa-rss fa-fw " aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex justify-content-end" style="border-top: 2px dotted orange">
+                                                <div class="morelink">
+                                                    <a class="btn btn-link btn-sm icon-nomargin" href="https://moodle.org/news/">
+                                                        See all announcements
+                                                        <i class="icon fa fa-angle-double-right fa-fw " aria-hidden="true"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                
+                                 <div class="col-md-3">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading">
+                                                <a href="https://moodle.org/news/">
+                                                    Congratulations to our GSoC 2019 students
+                                                </a>
+                                            </div>
+                                            <div class="muted">
+                                                <span class="muted text-muted small">
+                                                    Thursday, September 12, 2019
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-md-3">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading">
+                                                <a href="https://moodle.org/news/#p1574798">
+                                                    Moodle 3.7.2 and other minors have been released
+                                                </a>
+                                            </div>
+                                            <div class="muted">
+                                                <span class="muted text-muted small">
+                                                    Monday, September 9, 2019
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-md-3">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading">
+                                                <a href="https://moodle.org/news/#p1569206">
+                                                    Moodle 3.8 forum grading usability testing
+                                                </a>
+                                            </div>
+                                            <div class="muted">
+                                                <span class="muted text-muted small">
+                                                    Monday, August 5, 2019
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
-    
-                     <div class="col-md-3">
-                        <div class="media">
-                            <div class="media-body">
-                                <div class="media-heading">
-                                    <a href="https://moodle.org/news/">
-                                        Congratulations to our GSoC 2019 students
-                                    </a>
-                                </div>
-                                <div class="muted">
-                                    <span class="muted text-muted small">
-                                        Thursday, September 12, 2019
-                                    </span>
-                                </div>
-                            </div>
+                </div><br>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-6">
+                <form class="contact" style="width: 50%">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" placeholder="Username" required/>
                         </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password" required/>
+                        </div>
+                        <div><button type="submit" class="btn btn-primary" style="border-radius: 15px;margin-bottom:10px"><i class="fa fa-unlock"></i> Login</button> </div></form>
                     </div>
-                     <div class="col-md-3">
-                        <div class="media">
-                            <div class="media-body">
-                                <div class="media-heading">
-                                    <a href="https://moodle.org/news/#p1574798">
-                                        Moodle 3.7.2 and other minors have been released
-                                    </a>
-                                </div>
-                                <div class="muted">
-                                    <span class="muted text-muted small">
-                                        Monday, September 9, 2019
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-md-3">
-                        <div class="media">
-                            <div class="media-body">
-                                <div class="media-heading">
-                                    <a href="https://moodle.org/news/#p1569206">
-                                        Moodle 3.8 forum grading usability testing
-                                    </a>
-                                </div>
-                                <div class="muted">
-                                    <span class="muted text-muted small">
-                                        Monday, August 5, 2019
-                                    </span>
+                    <div class="col-md-6">
+                            <form class="contact" style="width: 50%">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input type="text" class="form-control" placeholder="Username" required/>
+                                    </div>
+                                    <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" placeholder="Email Id" required/>
+                                        </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" placeholder="Password" required/>
+                                    </div>
+                                    <div><button type="submit" class="btn btn-primary" style="border-radius: 15px;margin-bottom:10px"><i class="fa fa-lock"></i> Sign Up</button> </div></form>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-                        <div class="using-moodle container-fluid px-4 pt-4">
-        <div class="row">
-            <div class="card m-0 pb-4 px-2  border-0 focusblock">
-                <div class="card-body box-shadow-1 rounded border border-graylight theproject">
-                    <h4>The Moodle project</h4>
-                    <p>Learn more about the Moodle project and our open, collaborative partnerships.</p>
-                    <ul class="list-unstyled alternate" type="square">
-                        <li><a href="/about/">About Moodle</a></li>
-                        <li><a href="/stats/">Statistics</a></li>
-                        <li><a href="http://moodle.com/hq/">Moodle HQ</a></li>
-                        <li><a href="http://moodle.com/partners/">Moodle Partners</a></li>
-                        <li><a href="/dev/">Developers</a></li>
-                    </ul>
                 </div>
-            </div>
-            <div class="card m-0 pb-4 px-2 border-0 focusblock">
-                <div class="card-body box-shadow-1 rounded border border-graylight settingup">
-                    <h4>Setting up</h4>
-                    <p>On your own</p>
-                    <ul class="list-unstyled alternate" type="square">
-                        <li><a href="http://download.moodle.org/">Free download</a></li>
-                        <li><a href="http://docs.moodle.org/en/Installation">Installation</a></li>
-                        <li><a href="/plugins/">Plugins</a></li>
-                        <li><a href="/forums/">Community support</a></li>
-                    </ul>
-                    <p>Via a Moodle Partner</p>
-                    <ul class="list-unstyled alternate" type="square">
-                    <li><a href="http://moodle.com/partners/?mode=search&amp;services=hosting">Hosting</a></li>
-                    <li><a href="http://moodle.com/partners/?mode=search&amp;services=support">Commercial support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card m-0 pb-4 px-2 border-0 focusblock">
-                <div class="card-body box-shadow-1 rounded border border-graylight teaching">
-                    <h4>Teaching with Moodle</h4>
-                    <p>Explore Moodle's wide range of features and available resources.</p>
-                    <ul class="list-unstyled alternate" type="square">
-                        <li><a href="http://docs.moodle.org/en/">Documentation</a></li>
-                        <li><a href="http://moodle.net/">Courses and content</a></li>
-                        <li><a href="/books/">Books</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card m-0 pb-4 px-2 border-0 focusblock">
-                <div class="card-body box-shadow-1 rounded border border-graylight community">
-                    <h4>Support and community forums</h4>
-                    <p>Get support and share ideas, in your own language.</p>
-                    <ul class="list-unstyled alternate" type="square">
-                        <li class="community lang-en">
-                            <a href="https://moodle.org/course/view.php?id=5">
-                                Moodle in English
-                            </a>
-                        </li>
-                        <li class="community lang-es">
-                            <a href="https://moodle.org/course/view.php?id=11">
-                                Moodle en Español
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="viewmore"><a href="/community/">All communities</a></p>
-                </div>
-            </div>
-            <div class="card m-0 pb-4 px-2 border-0 focusblock">
-                <div class="card-body box-shadow-1 rounded border border-graylight future">
-                    <h4>Help shape Moodle's future</h4>
-                    <p>Find out what's next and help make a difference.</p>
-                    <ul class="list-unstyled alternate" type="square">
-                        <li><a href="http://docs.moodle.org/dev/Roadmap">Roadmap</a></li>
-                        <li><a href="/mod/forum/view.php?f=33">Developer discussions</a></li>
-                        <li><a href="http://research.moodle.net/">Moodle research</a></li>
-                        <li><a href="/mod/data/view.php?id=8090">Crowdfunding projects</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card m-0 pb-4 px-2 border-0 focusblock">
-                <div class="card-body box-shadow-1 rounded border border-graylight uptodate">
-                    <h4>Keep up-to-date</h4>
-                    <p>Latest Moodle news, updates and insight across the world.</p>
-                    <ul class="list-unstyled alternate" type="square">
-                        <li><a href="/news/">Announcements</a></li>
-                        <li><a href="/security/">Security announcements</a></li>
-                        <li><a href="/buzz/">Moodle buzz</a></li>
-                        <li><a href="/social/">Social media</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-                        <div class="feeds">
-        <div class="container-fluid">
-            <div class="row mb-5">
-                <!-- Useful posts -->
-                <div class="col-md-4 feed useful">
-                    <div class="d-flex border-bottom-dotted align-items-center">
-                        <h3>
-                        Useful posts
-                        </h3>
-                        <a href="https://moodle.org/useful/rss.php?lang=en" class="text-moodle-gray ml-auto">
-                           <i class="icon fa fa-rss fa-fw " aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <ul class="media-list list-unstyled">
-                        <li class="media mt-3 mt-3">
-                            <div class="itemimage">
-                                <a href="https://moodle.org/user/view.php?id=93821&amp;course=5"><img src="https://moodle.org/pluginfile.php/966/user/icon/moodleorg/f2?rev=1" class="userpicture" width="35" height="35" alt="Tim at Lone Pine Koala Sanctuary" title="Tim at Lone Pine Koala Sanctuary"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/mod/forum/discuss.php?d=390799#p1575479">
-                                        Re: Not display right answer when user gaveup the question in quiz
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="name">
-                                        <p>Tim Hunt
-                                    
-                                    -
-                                    <span class="date">
-                                        Thursday, September 12, 2019
-                                    </span>
-                                </p></span></div>
-                            </div>
-                        </li>
-                        <li class="media mt-3 mt-3">
-                            <div class="itemimage">
-                                <a href="https://moodle.org/user/view.php?id=93821&amp;course=5"><img src="https://moodle.org/pluginfile.php/966/user/icon/moodleorg/f2?rev=1" class="userpicture" width="35" height="35" alt="Tim at Lone Pine Koala Sanctuary" title="Tim at Lone Pine Koala Sanctuary"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/mod/forum/discuss.php?d=390799#p1575382">
-                                        Re: Not display right answer when user gaveup the question in quiz
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="name">
-                                        <p>Tim Hunt
-                                    
-                                    -
-                                    <span class="date">
-                                        Wednesday, September 11, 2019
-                                    </span>
-                                </p></span></div>
-                            </div>
-                        </li>
-                        <li class="media mt-3 mt-3">
-                            <div class="itemimage">
-                                <a href="https://moodle.org/user/view.php?id=1900831&amp;course=5"><img src="https://moodle.org/pluginfile.php/2084556/user/icon/moodleorg/f2?rev=1584957" class="userpicture" width="35" height="35" alt="Picture of solmaz naderi" title="Picture of solmaz naderi"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/mod/forum/discuss.php?d=390811#p1575540">
-                                        Re: How to Stop sending welcome email to users
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="name">
-                                        <p>solmaz naderi
-                                    
-                                    -
-                                    <span class="date">
-                                        Thursday, September 12, 2019
-                                    </span>
-                                </p></span></div>
-                            </div>
-                        </li>
-                        <li class="media mt-3 mt-3">
-                            <div class="itemimage">
-                                <a href="https://moodle.org/user/view.php?id=1183102&amp;course=5"><img src="https://moodle.org/pluginfile.php/460113/user/icon/moodleorg/f2?rev=979408" class="userpicture" width="35" height="35" alt="Picture of Usman Asar" title="Picture of Usman Asar"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/mod/forum/discuss.php?d=390935#p1575744">
-                                        Re: Planet Hoster, Softaculous, Moodle and Gapfill
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="name">
-                                        <p>Usman Asar
-                                    
-                                    -
-                                    <span class="date">
-                                        Friday, September 13, 2019
-                                    </span>
-                                </p></span></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="d-flex justify-content-end">
-                        <a class="btn btn-link btn-sm icon-nomargin" href="https://moodle.org/course/view.php?id=5">
-                            More posts
-                            <i class="icon fa fa-angle-double-right fa-fw " aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-    
-                <!-- Events -->
-                <div class="col-md-4 feed events">
-                    <div class="d-flex border-bottom-dotted align-items-center">
-                        <h3>
-                            Events
-                        </h3>
-                        <a href="https://moodle.org/calendar/export_execute.php?preset_what=all&amp;preset_time=recentupcoming&amp;userid=1&amp;authtoken=ced4b3071f3448075bb2fb4f7909886344539d69" class="text-moodle-gray ml-auto">
-                           <i class="icon fa fa-rss fa-fw " aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <ul class="media-list list-unstyled">
-                        <li class="media mt-3">
-                            <div class="itemimage text-moodle-gray">
-                                <i class="icon fa fa-globe fa-fw " title="Global event" aria-label="Global event"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/calendar/view.php?view=day&amp;course=5&amp;time=1568044800">
-                                        MoodleMoot DACH
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="date">
-                                        Tuesday, September 10, 2019
-                                    </span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="media mt-3">
-                            <div class="itemimage text-moodle-gray">
-                                <i class="icon fa fa-globe fa-fw " title="Global event" aria-label="Global event"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/calendar/view.php?view=day&amp;course=5&amp;time=1568822400">
-                                        MoodleMoot US 2019
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="date">
-                                        Thursday, September 19, 2019
-                                    </span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="media mt-3">
-                            <div class="itemimage text-moodle-gray">
-                                <i class="icon fa fa-globe fa-fw " title="Global event" aria-label="Global event"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/calendar/view.php?view=day&amp;course=5&amp;time=1569859200">
-                                        Community developer meeting
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="date">
-                                        Tuesday, October 1, 2019
-                                    </span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="media mt-3">
-                            <div class="itemimage text-moodle-gray">
-                                <i class="icon fa fa-globe fa-fw " title="Global event" aria-label="Global event"></i>
-                            </div>
-                            <div class="media-body">
-                                <div class="media-heading mb-1">
-                                    <a href="https://moodle.org/calendar/view.php?view=day&amp;course=5&amp;time=1570636800">
-                                        MoodleMoot Brasil - Maranhão
-                                    </a>
-                                </div>
-                                <div class="muted text-muted small">
-                                    <span class="date">
-                                        Thursday, October 10, 2019
-                                    </span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="d-flex justify-content-end">
-                        <a class="btn btn-link btn-sm icon-nomargin" href="calendar/view.php">
-                            More calendar entries
-                            <i class="icon fa fa-angle-double-right fa-fw " aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-                        <div class="partners">
-        <div class="container-fluid">
-            <div class="moodlepartnerbar">
-                <div class="row align-items-center">
-                    <div class="col-md-5">
-                        <div class="logo d-flex">
-                            <a href="http://moodle.com/partners" class="ml-auto">
-                                <img src="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1568627409/moodle-partners_logo_small" class="img-fluid" width="288px" height="74px">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-7 pt-3">
-                        <div class="slogan">
-                            The Moodle Project is supported by over 70 certified <a href="http://moodle.com/partners">Moodle Partners</a> globally.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnails">
-                <div class="row-fluid">
-                        <div class="col-4 col-sm-2 px-0 px-sm-2">
-                            <a href="https://partners.moodle.com/image/click.php?p=ballistic&amp;ad=ballistic">
-                                <img alt="Ballistic Learning Pvt. Ltd." class="grey" src="https://moodle.org/blocks/partners/image/ballistic/logo-grey.png">
-                            </a>
-                        </div>
-                        <div class="col-4 col-sm-2 px-0 px-sm-2">
-                            <a href="https://partners.moodle.com/image/click.php?p=eabyas&amp;ad=eabyas">
-                                <img alt="eAbyas Info Solutions" class="grey" src="https://moodle.org/blocks/partners/image/eabyas/logo-grey.png">
-                            </a>
-                        </div>
-                        <div class="col-4 col-sm-2 px-0 px-sm-2">
-                            <a href="https://partners.moodle.com/image/click.php?p=vidyamantra&amp;ad=vidyamantra">
-                                <img alt="Vidya Mantra EduSystems Pvt. Ltd." class="grey" src="https://moodle.org/blocks/partners/image/vidyamantra/logo-grey.png">
-                            </a>
-                        </div>
-                        <div class="col-4 col-sm-2 px-0 px-sm-2">
-                            <a href="https://partners.moodle.com/image/click.php?p=adapta&amp;ad=adapta">
-                                <img alt="Adapta Learning Solutions" class="grey" src="https://moodle.org/blocks/partners/image/adapta/logo-grey.png">
-                            </a>
-                        </div>
-                        <div class="col-4 col-sm-2 px-0 px-sm-2">
-                            <a href="https://partners.moodle.com/image/click.php?p=ecreators&amp;ad=ecreators">
-                                <img alt="eCreators Pty Ltd" class="grey" src="https://moodle.org/blocks/partners/image/ecreators/logo-grey.png">
-                            </a>
-                        </div>
-                        <div class="col-4 col-sm-2 px-0 px-sm-2">
-                            <a href="https://partners.moodle.com/image/click.php?p=catalyst_uk&amp;ad=catalyst_uk">
-                                <img alt="Catalyst IT Europe LTD" class="grey" src="https://moodle.org/blocks/partners/image/catalyst_uk/logo-grey.png">
-                            </a>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-                        <div class="container-fluid">
-                            <div role="main"><span id="maincontent"></span><br></div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        
-        <footer id="page-footer">
-            <div class="footer-nav">
-        <div class="container-fluid">
-            <div class="row px-3">
-                 <div class="col-md-2">
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://moodle.org">The Moodle Project</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/about/">About</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/news/">Announcements</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/community/">Community forums</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://docs.moodle.org/dev/Contributing_to_Moodle">Get involved</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.com/partners/">Moodle Partners</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodlemoot.org/">MoodleMoot</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodleassociation.org/">Moodle Users Association</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://learn.moodle.net/">Learn Moodle</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.com/cloud/">MoodleCloud</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/donations/">Donate</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://www.zazzle.com/moodle_hq">Moodle store</a>
-                                </li>
-                        </ul>
-                </div>
-                 <div class="col-md-2">
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://docs.moodle.org">Documentation</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://docs.moodle.org/">Moodle 3.7</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://docs.moodle.org/overview/">Browse by language</a>
-                                </li>
-                        </ul>
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://download.moodle.org/">Downloads</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://download.moodle.org/releases/latest/">Latest release</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/plugins/">Plugins</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://download.moodle.org/mobile/">Moodle app</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://download.moodle.org/desktop/">Moodle Desktop</a>
-                                </li>
-                        </ul>
-                </div>
-                 <div class="col-md-2">
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://moodle.org/demo">Demo</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://school.moodledemo.net/">School</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://sandbox.moodledemo.net/">Sandbox</a>
-                                </li>
-                        </ul>
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://tracker.moodle.org">Tracker</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://tracker.moodle.org/browse/MDL">Browse issues</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://tracker.moodle.org/secure/CreateIssue.jspa?pid=10011&amp;issuetype=1">Report issue</a>
-                                </li>
-                        </ul>
-                </div>
-                 <div class="col-md-2">
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="">Development</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://docs.moodle.org/dev/">Dev documentation</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://docs.moodle.org/dev/Roadmap">Roadmap</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/mod/forum/view.php?id=55">General developer forum</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.org/dev/">Developer credits</a>
-                                </li>
-                        </ul>
-                </div>
-                 <div class="col-md-2">
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://lang.moodle.org">Translation</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://docs.moodle.org/dev/Contributing_a_translation">Help translate Moodle</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://lang.moodle.org/course/view.php?id=2">Translation forums</a>
-                                </li>
-                                <li class="secondary">
-                                    <a href="https://lang.moodle.org/local/amos/credits.php">Translation credits</a>
-                                </li>
-                        </ul>
-                        <ul class="list-unstyled footer-nav-list">
-                            <li class="primary">
-                                <a href="https://moodle.net">Moodle.net</a>
-                            </li>
-                                <li class="secondary">
-                                    <a href="https://moodle.net/?downloadable=0&amp;submitbutton=Search%20for%20courses">Browse courses</a>
-                                </li>
-                        </ul>
-                </div>
-                <div class="col-md-2">
-                    <div class="social">
-                        <img id="moodlelogo" src="https://moodle.org/theme/image.php/moodleorg/theme/1568627409/moodle_logo_grayhat_small" alt="Moodle">
-                        <div id="sharethis">
-                            <ul>
-                                <li><a id="share-twitter" href="https://twitter.com/@moodle"><span>Twitter</span></a></li>
-                                <li><a id="share-facebook" href="https://facebook.com/moodle"><span>Facebook</span></a></li>
-                                <li><a id="share-linkedin" href="https://www.linkedin.com/company/moodle"><span>Linked In</span></a></li>
-                                <li><a id="share-youtube" href="https://www.youtube.com/moodlehq"><span>Youtube</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-            <div class="footer-info">
-                <div class="logininfo">You are not logged in. (<a href="https://moodle.org/login/index.php">Log in</a>)</div>
-        
-        
-                <div class="mt-3">
-                    <p style="text-align: center;" class="footernotice">Moodle™ is a <a href="https://moodle.com/trademarks/">registered trademark</a> </p>
-    <p style="text-align: center;" class="footernotice"><a href="https://moodle.org/mod/page/view.php?id=7080">Site policy</a> | <a href="https://moodle.org/contact">Contact</a></p>
-                </div>
-                <a href="https://download.moodle.org/mobile?version=2019052002&amp;lang=en_us&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a><div class="policiesfooter"><a href="https://moodle.org/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Fmoodle.org%2F">Policies</a></div>
-                <div class="standards">
-        <ul>
-            <li><a class="ll" href="https://docs.moodle.org/en/Standards"><span>Open Source</span></a></li>
-            <li><a class="l" href="https://docs.moodle.org/en/Standards"><span>IMS LTI™ Certified</span></a></li>
-            <li><a class="r" href="https://docs.moodle.org/en/Standards"><span>SCORM-ADL compliant</span></a></li>
-            <li><a class="rr" href="https://docs.moodle.org/en/Standards"><span>Open Badges</span></a></li>
-        </ul>
-    </div>
-        
-                <div class="tool_usertours-resettourcontainer"></div>
-            </div>
             
-    <script type="text/javascript">
+            <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-md-2">
+                                <div class="card">
+                                    
+                                    <div class="card-body">
+                                      <h5 class="card-title">Title</h5>
+                                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla voluptatum libero asperiores. Fuga repudiandae quia eligendi vel, aspernatur et hic doloremque laborum! Optio illum dicta officia sint doloremque nisi.</p>
+                                      <a href="#" class="btn btn-primary">Know More</a>
+                                    </div>
+                                  </div>
+            
+                            </div>
+                            <div class="col-md-2">
+                                    <div class="card">
+                                        
+                                        <div class="card-body">
+                                          <h5 class="card-title">Title</h5>
+                                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla voluptatum libero asperiores. Fuga repudiandae quia eligendi vel, aspernatur et hic doloremque laborum! Optio illum dicta officia sint doloremque nisi.</p>
+                                          <a href="#" class="btn btn-primary">Know More</a>
+                                        </div>
+                                      </div>
+                
+                                </div>
+                                <div class="col-md-2">
+                                        <div class="card">
+                                            
+                                            <div class="card-body">
+                                              <h5 class="card-title">Title</h5>
+                                              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla voluptatum libero asperiores. Fuga repudiandae quia eligendi vel, aspernatur et hic doloremque laborum! Optio illum dicta officia sint doloremque nisi.</p>
+                                              <a href="#" class="btn btn-primary">Know More</a>
+                                            </div>
+                                          </div>
+                    
+                                    </div>
+                                    <div class="col-md-2">
+                                            <div class="card">
+                                                
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Title</h5>
+                                                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla voluptatum libero asperiores. Fuga repudiandae quia eligendi vel, aspernatur et hic doloremque laborum! Optio illum dicta officia sint doloremque nisi.</p>
+                                                  <a href="#" class="btn btn-primary">Know More</a>
+                                                </div>
+                                              </div>
+                        
+                                        </div>
+                                        <div class="col-md-2">
+                                                <div class="card">
+                                                    
+                                                    <div class="card-body">
+                                                      <h5 class="card-title">Title</h5>
+                                                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla voluptatum libero asperiores. Fuga repudiandae quia eligendi vel, aspernatur et hic doloremque laborum! Optio illum dicta officia sint doloremque nisi.</p>
+                                                      <a href="#" class="btn btn-primary">Know More</a>
+                                                    </div>
+                                                  </div>
+                            
+                                            </div>
+                                            <div class="col-md-2">
+                                                    <div class="card">
+                                                        
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Title</h5>
+                                                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla voluptatum libero asperiores. Fuga repudiandae quia eligendi vel, aspernatur et hic doloremque laborum! Optio illum dicta officia sint doloremque nisi.</p>
+                                                          <a href="#" class="btn btn-primary">Know More</a>
+                                                        </div>
+                                                      </div>
+                                
+                                                </div>
+                            
+                            </div>
+                        </div><br>
+                        <div style="border-top:2px solid black"></div><br>
+                <footer id="page-footer">
+                        <div class="footer-nav">
+                    <div class="container-fluid">
+                        <div class="row px-3">
+                             <div class="col-md-2">
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                            <a href="https://moodle.org" style="text-decoration: none;color:orange;">The Moodle Project</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/about/">About</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/news/">Announcements</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/community/">Community forums</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://docs.moodle.org/dev/Contributing_to_Moodle">Get involved</a>
+                                            </li>
+                                            <li class="secondary"><br>
+                                                    <a href="https://moodle.org" style="text-decoration: none;color:orange;">Moodle Partners</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodlemoot.org/">MoodleMoot</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodleassociation.org/">Moodle Users Association</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://learn.moodle.net/">Learn Moodle</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.com/cloud/">MoodleCloud</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/donations/">Donate</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://www.zazzle.com/moodle_hq">Moodle store</a>
+                                            </li>
+                                    </ul>
+                            </div>
+                             <div class="col-md-2">
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">Documentation</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://docs.moodle.org/">Moodle 3.7</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://docs.moodle.org/overview/">Browse by language</a>
+                                            </li>
+                                    </ul>
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">Downloads</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://download.moodle.org/releases/latest/">Latest release</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/plugins/">Plugins</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://download.moodle.org/mobile/">Moodle app</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://download.moodle.org/desktop/">Moodle Desktop</a>
+                                            </li>
+                                    </ul>
+                            </div>
+                             <div class="col-md-2">
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">Demo</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://school.moodledemo.net/">School</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://sandbox.moodledemo.net/">Sandbox</a>
+                                            </li>
+                                    </ul>
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">   Tracker</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://tracker.moodle.org/browse/MDL">Browse issues</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://tracker.moodle.org/secure/CreateIssue.jspa?pid=10011&amp;issuetype=1">Report issue</a>
+                                            </li>
+                                    </ul>
+                            </div>
+                             <div class="col-md-2">
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">Development</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://docs.moodle.org/dev/">Dev documentation</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://docs.moodle.org/dev/Roadmap">Roadmap</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/mod/forum/view.php?id=55">General developer forum</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.org/dev/">Developer credits</a>
+                                            </li>
+                                    </ul>
+                            </div>
+                             <div class="col-md-2">
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">Translation</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://docs.moodle.org/dev/Contributing_a_translation">Help translate Moodle</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://lang.moodle.org/course/view.php?id=2">Translation forums</a>
+                                            </li>
+                                            <li class="secondary">
+                                                <a href="https://lang.moodle.org/local/amos/credits.php">Translation credits</a>
+                                            </li>
+                                    </ul>
+                                    <ul class="list-unstyled footer-nav-list">
+                                        <li class="primary">
+                                                <a href="https://moodle.org" style="text-decoration: none;color:orange;">Moodle.net</a>
+                                        </li>
+                                            <li class="secondary">
+                                                <a href="https://moodle.net/?downloadable=0&amp;submitbutton=Search%20for%20courses">Browse courses</a>
+                                            </li>
+                                    </ul>
+                            </div>
+                        </div>
+                
+                
+                    </footer>
     
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-72764-1']);
-      _gaq.push(['_trackPageview']);
-    
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    
-    </script><script type="text/javascript">
-    //<![CDATA[
-    var require = {
-        baseUrl : 'https://moodle.org/lib/requirejs.php/1568340012/',
-        // We only support AMD modules with an explicit define() statement.
-        enforceDefine: true,
-        skipDataMain: true,
-        waitSeconds : 0,
-    
-        paths: {
-            jquery: 'https://moodle.org/lib/javascript.php/1568340012/lib/jquery/jquery-3.2.1.min',
-            jqueryui: 'https://moodle.org/lib/javascript.php/1568340012/lib/jquery/ui-1.12.1/jquery-ui.min',
-            jqueryprivate: 'https://moodle.org/lib/javascript.php/1568340012/lib/requirejs/jquery-private'
-        },
-    
-        // Custom jquery config map.
-        map: {
-          // '*' means all modules will get 'jqueryprivate'
-          // for their 'jquery' dependency.
-          '*': { jquery: 'jqueryprivate' },
-          // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
-          '*': { process: 'core/first' },
-    
-          // 'jquery-private' wants the real jQuery module
-          // though. If this line was not here, there would
-          // be an unresolvable cyclic dependency.
-          jqueryprivate: { jquery: 'jquery' }
-        }
-    };
-    
-    //]]>
-    </script>
-    <script type="text/javascript" src="https://moodle.org/lib/javascript.php/1568340012/lib/requirejs/require.min.js"></script>
-    <script type="text/javascript">
-    //<![CDATA[
-    require(['core/first'], function() {
-    ;
-    require(["media_videojs/loader"], function(loader) {
-        loader.setUp(function(videojs) {
-            videojs.options.flash.swf = "https://moodle.org/media/player/videojs/videojs/video-js.swf";
-    videojs.addLanguage("en",{
-     "Audio Player": "Audio Player",
-     "Video Player": "Video Player",
-     "Play": "Play",
-     "Pause": "Pause",
-     "Replay": "Replay",
-     "Current Time": "Current Time",
-     "Duration Time": "Duration Time",
-     "Remaining Time": "Remaining Time",
-     "Stream Type": "Stream Type",
-     "LIVE": "LIVE",
-     "Loaded": "Loaded",
-     "Progress": "Progress",
-     "Progress Bar": "Progress Bar",
-     "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
-     "Fullscreen": "Fullscreen",
-     "Non-Fullscreen": "Non-Fullscreen",
-     "Mute": "Mute",
-     "Unmute": "Unmute",
-     "Playback Rate": "Playback Rate",
-     "Subtitles": "Subtitles",
-     "subtitles off": "subtitles off",
-     "Captions": "Captions",
-     "captions off": "captions off",
-     "Chapters": "Chapters",
-     "Descriptions": "Descriptions",
-     "descriptions off": "descriptions off",
-     "Audio Track": "Audio Track",
-     "Volume Level": "Volume Level",
-     "You aborted the media playback": "You aborted the media playback",
-     "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
-     "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
-     "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
-     "No compatible source was found for this media.": "No compatible source was found for this media.",
-     "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
-     "Play Video": "Play Video",
-     "Close": "Close",
-     "Close Modal Dialog": "Close Modal Dialog",
-     "Modal Window": "Modal Window",
-     "This is a modal window": "This is a modal window",
-     "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
-     ", opens captions settings dialog": ", opens captions settings dialog",
-     ", opens subtitles settings dialog": ", opens subtitles settings dialog",
-     ", opens descriptions settings dialog": ", opens descriptions settings dialog",
-     ", selected": ", selected",
-     "captions settings": "captions settings",
-     "subtitles settings": "subititles settings",
-     "descriptions settings": "descriptions settings",
-     "Text": "Text",
-     "White": "White",
-     "Black": "Black",
-     "Red": "Red",
-     "Green": "Green",
-     "Blue": "Blue",
-     "Yellow": "Yellow",
-     "Magenta": "Magenta",
-     "Cyan": "Cyan",
-     "Background": "Background",
-     "Window": "Window",
-     "Transparent": "Transparent",
-     "Semi-Transparent": "Semi-Transparent",
-     "Opaque": "Opaque",
-     "Font Size": "Font Size",
-     "Text Edge Style": "Text Edge Style",
-     "None": "None",
-     "Raised": "Raised",
-     "Depressed": "Depressed",
-     "Uniform": "Uniform",
-     "Dropshadow": "Dropshadow",
-     "Font Family": "Font Family",
-     "Proportional Sans-Serif": "Proportional Sans-Serif",
-     "Monospace Sans-Serif": "Monospace Sans-Serif",
-     "Proportional Serif": "Proportional Serif",
-     "Monospace Serif": "Monospace Serif",
-     "Casual": "Casual",
-     "Script": "Script",
-     "Small Caps": "Small Caps",
-     "Reset": "Reset",
-     "restore all settings to the default values": "restore all settings to the default values",
-     "Done": "Done",
-     "Caption Settings Dialog": "Caption Settings Dialog",
-     "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
-     "End of dialog window.": "End of dialog window."
-    });
-    
-        });
-    });;
-    require(["block_settings/settingsblock"], function(amd) { amd.init("182232", null); });;
-    require(["block_navigation/navblock"], function(amd) { amd.init("182231"); });;
-    
-    
-    require(['jquery', 'tool_policy/jquery-eu-cookie-law-popup', 'tool_policy/policyactions'], function($, Popup, ActionsMod) {
-            // Initialise the guest popup.
-            $(document).ready(function() {
-                // Only show message if there is some policy related to guests.
-                    // Get localised messages.
-                    var textmessage = "If you continue browsing this website, you agree to our policies:" +
-                       "<ul>" +
-                       "<li>" +
-                       "<a href=\"https://moodle.org/admin/tool/policy/view.php?versionid=1&amp;returnurl=https%3A%2F%2Fmoodle.org%2F\" " +
-                       "   data-action=\"view-guest\" data-versionid=\"1\" data-behalfid=\"1\" >" +
-                       "Privacy notice" +
-                       "</a>" +
-                       "</li>" +
-                       "" +
-                       "<li>" +
-                       "<a href=\"https://moodle.org/admin/tool/policy/view.php?versionid=2&amp;returnurl=https%3A%2F%2Fmoodle.org%2F\" " +
-                       "   data-action=\"view-guest\" data-versionid=\"2\" data-behalfid=\"1\" >" +
-                       "Cookies policy" +
-                       "</a>" +
-                       "</li>" +
-                       "" +
-                       "</ul>";
-                    var continuemessage = "Continue";
-    
-                    // Initialize popup.
-                    $(document.body).addClass('eupopup');
-                    if ($(".eupopup").length > 0) {
-                        $(document).euCookieLawPopup().init({
-                            popupPosition: 'bottom',
-                            popupTitle: '',
-                            popupText: textmessage,
-                            buttonContinueTitle: continuemessage,
-                            buttonLearnmoreTitle: '',
-                            compactStyle: true,
-                        });
-                    }
-    
-                // Initialise the JS for the modal window which displays the policy versions.
-                ActionsMod.init('[data-action="view-guest"]');
-            });
-    });
-    
-    ;
-    
-    require(['jquery'], function($) {
-        $('#single_select5d82f9dc49e0a5').change(function() {
-            var ignore = $(this).find(':selected').attr('data-ignore');
-            if (typeof ignore === typeof undefined) {
-                $('#single_select_f5d82f9dc49e0a4').submit();
-            }
-        });
-    });
-    ;
-    require(["core/search-input"], function(amd) { amd.init("5d82f9dc52cf2"); });;
-    
-    require(['theme_boost/loader']);
-    ;
-    require(["core/notification"], function(amd) { amd.init(5310, []); });;
-    require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
-    require(["core/page_global"], function(amd) { amd.init(); });
-    });
-    //]]>
-    </script>
-    <script type="text/javascript">
-    //<![CDATA[
-    M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","ok":"OK","viewallcourses":"View all courses","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"}};
-    //]]>
-    </script>
-    <script type="text/javascript">
-    //<![CDATA[
-    (function() {Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
-    });
-    Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
-    });
-    M.util.help_popups.setup(Y);
-     M.util.js_pending('random5d82f9dc49e0a6'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5d82f9dc49e0a6'); });
-    })();
-    //]]>
-    </script>
-    
-        </footer></div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
-    
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"05ab6e1949","applicationID":"70568480","transactionName":"YwBabBRSCEFYAkVaWlpKbUoPHA9cXQRJHUVcFQ==","queueTime":0,"applicationTime":82,"atts":"T0dZGlxIG08=","errorBeacon":"bam.nr-data.net","agent":""}</script>
-    <div class="eupopup-container eupopup-container-bottom eupopup-color-default" style="display: block;"><div class="eupopup-head"></div><div class="eupopup-body">If you continue browsing this website, you agree to our policies:<ul><li><a href="https://moodle.org/admin/tool/policy/view.php?versionid=1&amp;returnurl=https%3A%2F%2Fmoodle.org%2F" data-action="view-guest" data-versionid="1" data-behalfid="1">Privacy notice</a></li><li><a href="https://moodle.org/admin/tool/policy/view.php?versionid=2&amp;returnurl=https%3A%2F%2Fmoodle.org%2F" data-action="view-guest" data-versionid="2" data-behalfid="1">Cookies policy</a></li></ul></div><div class="eupopup-buttons"><a href="#" class="eupopup-button eupopup-button_1">Continue</a><a href="http://www.wimagguc.com/?cookie-policy" target="_blank" class="eupopup-button eupopup-button_2"></a><div class="clearfix"></div></div><a href="#" class="eupopup-closebutton">x</a></div></body>
+</body>
 </html>
